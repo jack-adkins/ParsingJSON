@@ -15,16 +15,16 @@
                 let output = '';
                 data.forEach(product => {
                     output += `
-                        <div class="product">
-                            <span class="name">${product.name}</span>
-                            <span class="description">${product.description}</span>
-                            <span class="price">Price: ${product.price}</span>
-                            <span class="category">Categories: ${product.categories.join(', ')}</span>
-                        </div>
+                        <product>
+                            <name>${product.name}</name>
+                            <description>${product.description}</description>
+                            <price>Price: ${product.price}</price>
+                            <category>Categories: ${product.categories.join(', ')}</category>
+                        </product>
                     `;
                 });
                 document.getElementById('product-container').innerHTML = output;
             });
-        </script>
+        </script>        
     </body>
 </html>
